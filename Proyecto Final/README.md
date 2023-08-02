@@ -1,23 +1,30 @@
 ![Portada](./media/header.png)
-# Proyecto Final de Data Science
-## "Entrenamiento y optimización de modelos de machine learning para la predicción del abandono de clientes en una empresa de telecomunicaciones"<br><br> 
+# Proyecto Final de Data Science #
+## "Entrenamiento y optimización de modelos de machine learning para la predicción del abandono de clientes en una empresa de telecomunicaciones"<br><br> ##
 
-# Introducción 
+# Introducción #
 El proyecto que aquí desarrollamos tiene como finalidad el entrenamiento y optimización de modelos de Machine Learning para la predicción del abandono de clientes en una empresa de telecomunicaciones, este análisis se centra en el comportamiento de los clientes de telecomunicaciones que tienen más probabilidades de abandonar la plataforma. La idea es descubrir el comportamiento de los clientes a través del análisis exploratorio de datos (EDA) y luego utilizar algunas de las técnicas de análisis predictivo para determinar los clientes que tienen más o menos probabilidades de abandonar.
 <br><br>
 
-# Índice
-* Contexto y Audiencia
-* Hipótesis/ Preguntas de Interés
-* Análisis Exploratorio de datos
-* Algoritmos de clasificación
-* Ingeniería de atributos
-* Entrenamiento y Testeo
-* Optimización
-* Insights
-* Conclusiones
+# Índice #
+- [Proyecto Final de Data Science](#proyecto-final-de-data-science)
+  - ["Entrenamiento y optimización de modelos de machine learning para la predicción del abandono de clientes en una empresa de telecomunicaciones"](#entrenamiento-y-optimización-de-modelos-de-machine-learning-para-la-predicción-del-abandono-de-clientes-en-una-empresa-de-telecomunicaciones)
+- [Introducción](#introducción)
+- [Índice](#índice)
+- [Contexto y Audiencia](#contexto-y-audiencia)
+- [Preguntas de Interés](#preguntas-de-interés)
+- [Análisis Exploratorio de datos](#análisis-exploratorio-de-datos)
+- [Algoritmos de clasificación](#algoritmos-de-clasificación)
+- [Ingeniería de atributos](#ingeniería-de-atributos)
+- [Optimización](#optimización)
+- [Entrenamiento y Testeo](#entrenamiento-y-testeo)
+- [Insights](#insights)
+- [Conclusiones](#conclusiones)
+  - [Realizado por:Carlos Enrique Parra Vílchez](#realizado-porcarlos-enrique-parra-vílchez)
+  
 <br><br>
-# Contexto y Audiencia
+
+# Contexto y Audiencia #
 
 Contexto
 Este análisis se centra en el comportamiento de los clientes de una empresa de telecomunicaciones para determinar que suscriptores tienen más probabilidades de abandonar la plataforma. 
@@ -25,7 +32,8 @@ La idea es descubrir el comportamiento de los clientes a través del análisis e
 Audiencia
 Esta investigación estadirigida a los responsables de la toma de decisiones del área comercial de la empresa de Telecomunicaciones, en virtud de la perdida de suscriptores activos en los últimos meses.
 <br><br>
-# Preguntas de Interés
+
+# Preguntas de Interés #
 Determinar si la cantidad y el tipo de servicios contratados influye en la retención del cliente.
 Determinar cómo se correlacionan las distintas variables del estudio con la duración de los contratos y la retención.
 Determinar si el aumento en los cargos incide en la tasa de abandono
@@ -34,7 +42,8 @@ Predecir a través de un modelo si el cliente va a abandonar el servicio o no y 
 Demostrar que el aumento de los servicios contratados incide en la permanencia de los clientes
 ¿Qué estrategias de retención se pueden implementar en función de los resultados para disminuir la pérdida de clientes potenciales?
 <br><br>
-# Análisis Exploratorio de datos
+
+# Análisis Exploratorio de datos #
 Nombre del dataset: "Dataset-Telco-Customer-Churn.csv
 Este dataset incluye un total de 7,043 registros y 21 columnas
 
@@ -70,7 +79,8 @@ Se represento la permanencia a través de un KDE Plot y pudimos observar que la 
 Se puede destacar que a medida que la factura es mayor existes menos suscriptores
 No existe una variación significativa del comportamiento de pagos de acuerdo con el género, solo que los pagos automáticos son mayores a los que no son automáticos y el menos utilizado es el cheque.
 <br><br>
-# Algoritmos de clasificación
+
+# Algoritmos de clasificación #
 Por las características del dataset se debería adaptar más un modelo clasificación más que uno de regresión, pero observando los valores de accuracy en el de regresión lineal es mayor llegando a 90%, y en los de clasificación máximo a un 80%.
 Durante la fase inicial se utilizaron algoritmos de clasificación como Regresión Logística, KNeighbors,  al dataset original obteniendo métricas que no son las esperadas en un modelo eficiente, por ello se procede a aplicar otras técnicas, ya que se obtuvieron las siguientes conclusiones
 
@@ -86,16 +96,20 @@ Durante la fase inicial se utilizaron algoritmos de clasificación como Regresi�
 
 Hasta el momento, la mejor métrica de Accuracy se obtuvo con un ajuste manual en el arbol de decisión a max_depth=2, pasando de un accuracy para árbol de decisión original sin ningún ajuste de: 0.7341862117981521 y luego de los ajustes manuales llegando con el Cross-Validation a: 0.7894222222222222.
 <br><br>
-# Ingeniería de atributos
+
+# Ingeniería de atributos #
 Luego de todos los algoritmos y técnicas aplicadas encontramos que los resultados obtenidos en función al accuracy no son aceptables, procederemos a cambiar el enfoque y centrarnos específicamente en mejorar las métricas en función del resultado deseado que es predecir más eficientemente la tasa de abandono, que basado en los datos seria predecir la variable Churn con resultado = 1, mejorando el recall, para ello haremos uso de otros algoritmos más ajustados en función de los hiperparametros y aplicando oversampling entre otras cosas.
+<br><br>
+
+# Optimización #
 Para esto se tuvo que hacer un nuevo preprocesamiento aplicando get dummies para crear variales adicionales y estudiarlas mas fácilmente, se comprobaron outliers nuevamente y se reentrenaron de nuevo los modelos, obteniendo nuevamente resultados no concluyentes.
 <br><br>
 
-# Entrenamiento y Testeo
+# Entrenamiento y Testeo #
 Como las métricas obtenidas hasta ahora no responden a nuestro problemas se decide entrenar los algoritmos aplicando  adicionalmente validación cruzada, grid search y un método árboles adicionales (sklearn.ensemble.ExtraTreesClassifier) para mejorar los resultados, resaltar los features más importantes para enfocarnos ahora es subir el recall, lo que permitió tener valores aceptables.
 <br><br>
 
-# Insights
+# Insights #
 El dataset contiene información sobre 7,043 clientes de una compañía de telecomunicaciones, con 21 variables diferentes.
 La tasa de abandono de clientes (churn_rate) en el dataset es del 26.5%, lo que sugiere que la compañía de telecomunicaciones puede estar teniendo problemas para retener a sus clientes.
 La mayoría de los clientes (68.5%) son usuarios de servicios de telefonía, mientras que el resto son usuarios de servicios de Internet y servicios de televisión.
@@ -108,7 +122,7 @@ Se sugiere para mejorar la retención de sus clientes ofrecer contratos a largo 
 También podrían considerar la posibilidad de ajustar sus precios para retener a los clientes de mayor valor
 <br><br>
 
-# Conclusiones
+# Conclusiones #
 Luego de todos los algoritmos y técnicas aplicadas encontramos que los resultados obtenidos en función al accuracy no son aceptables, procederemos a cambiar el enfoque y centrarnos específicamente en mejorar las métricas en función del resultado deseado que es predecir mas eficientemente la tasa de abandono, que basado en los datos seria predecir la variable Churn con resultado = 1, mejorando el recall, para ello haremos uso de otros algoritmos más ajustados en función de los hiperparametros.
 Al observar que los datos están desabalanceados se aplica oversampling para corregir esto y establecer las variables más importantes, para a partir de allí, reentrenar los modelos y elegir el mejor predictor.
 Luego de este enfoque (Mejorar el Recall), podemos determinar que el mejor modelo es el RandomForest Classifier, con un Recallde 95% para la predicción acertada de los pueden abandonar y un resultado de 84% para los que no.
