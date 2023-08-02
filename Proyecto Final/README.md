@@ -7,8 +7,6 @@ El proyecto que aquí desarrollamos tiene como finalidad el entrenamiento y opti
 <br><br>
 
 # Índice #
-- [Proyecto Final de Data Science](#proyecto-final-de-data-science)
-  - ["Entrenamiento y optimización de modelos de machine learning para la predicción del abandono de clientes en una empresa de telecomunicaciones"](#entrenamiento-y-optimización-de-modelos-de-machine-learning-para-la-predicción-del-abandono-de-clientes-en-una-empresa-de-telecomunicaciones)
 - [Introducción](#introducción)
 - [Índice](#índice)
 - [Contexto y Audiencia](#contexto-y-audiencia)
@@ -20,8 +18,6 @@ El proyecto que aquí desarrollamos tiene como finalidad el entrenamiento y opti
 - [Entrenamiento y Testeo](#entrenamiento-y-testeo)
 - [Insights](#insights)
 - [Conclusiones](#conclusiones)
-  - [Realizado por:Carlos Enrique Parra Vílchez](#realizado-porcarlos-enrique-parra-vílchez)
- 
 <br><br>
 
 # Contexto y Audiencia #
