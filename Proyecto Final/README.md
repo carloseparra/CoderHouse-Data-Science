@@ -124,6 +124,47 @@ Al observar que los datos están desabalanceados se aplica oversampling para cor
 Luego de este enfoque (Mejorar el Recall), podemos determinar que el mejor modelo es el RandomForest Classifier, con un Recallde 95% para la predicción acertada de los pueden abandonar y un resultado de 84% para los que no.
 <p style="text-align:right;"><a href="#%C3%ADndice">Volver al índice</a></p><br>
 
+# Anexos #
+Para lograr obtener las conclusiones finales se tuvo que hacer un análisis del dataset durante toda la cursada aplicando todo lo aprendido en clases en 16 entregas parciales, las cuales se describen a continuación y pretenden hacer un explicación mas detallada de todos los algoritmos y técnicas aplicadas.
+
+Las entregas fueron las siguientes:
+
+[1.- Elección de Datasets potenciales](https://github.com/carloseparra/CoderHouse-Data-Science/blob/main/E01_Dataset_Parra_Vilchez_Telco-Customer-Churn_.ipynb)
+
+[2.- Práctica integradora: Visualizaciones en Python](https://github.com/carloseparra/CoderHouse-Data-Science/blob/main/E02_Visualizacion_Parra_Vilchez_Telco-Customer-Churn_.ipynb)
+
+[3.- Estructurando un Proyecto de DS (parte I)](https://github.com/carloseparra/CoderHouse-Data-Science/blob/main/E03_Parra_Vilchez_Telco-Customer-Churn_E3.ipynb)
+
+[4.- Estructurando un Proyecto de DS (parte II)](https://github.com/carloseparra/CoderHouse-Data-Science/blob/main/E04_ProyectoDS_ParteII_Parra_Vilchez_Telco-Customer-Churn_.ipynb)
+
+[5.- Práctica integradora](https://github.com/carloseparra/CoderHouse-Data-Science/blob/main/E05_Proyecto_ParteIII_Parra_Vilchez_Telco-Customer-Churn_.ipynb)
+
+[5.a.- Evaluando modelos ML](https://github.com/carloseparra/CoderHouse-Data-Science/blob/main/E05_Proyecto_ComplementarioI_Parra_Vilchez_Telco-Customer-Churn_.ipynb)
+
+[6.- Primera entrega de tu Proyecto final](https://github.com/carloseparra/CoderHouse-Data-Science/blob/main/E06_PrimeraEntrega_Parra_Vilchez_Telco-Customer-Churn_.ipynb)
+
+[7.- Descarga de datos desde APIs públicas](https://github.com/carloseparra/CoderHouse-Data-Science/blob/main/E07_Desafio_APIS_Carlos_%20Parra.ipynb)
+
+[8.- Data Wrangling](https://github.com/carloseparra/CoderHouse-Data-Science/blob/main/E08_Data_Wrangling_Parra_Vilchez_Telco-Customer-Churn_.ipynb)
+
+[9.- Data Storytelling](https://github.com/carloseparra/CoderHouse-Data-Science/blob/main/E09_Data_StoryTelling_Parra_Vilchez_Telco-Customer-Churn_.ipynb)
+
+[10.- Obtención de insights](https://github.com/carloseparra/CoderHouse-Data-Science/blob/main/E10_Obtencion_de_insights_Parra_Vilchez_Telco-Customer-Churn_.ipynb)
+
+[11.- Obtención de insights a partir de visualizaciones](https://github.com/carloseparra/CoderHouse-Data-Science/blob/main/E11_Obtencion_de_insights_visualizaciones_Parra_Vilchez_Telco-Customer-Churn_.ipynb)
+
+[12.- Entrenando un algoritmo de Machine Learning](https://github.com/carloseparra/CoderHouse-Data-Science/blob/main/E12_Desafio_AlgoritmoML_MVP_Carlos_Parra_Telco-Customer-Churn_.ipynb)
+
+[13.- Evaluando modelos de Machine Learning](https://github.com/carloseparra/CoderHouse-Data-Science/blob/main/E13_Desafio_Evaluaci%C3%B3nML_MVP_Carlos_Parra_Telco-Customer-Churn_.ipynb)
+
+[14.- Ingeniería de atributos y selección de variables](https://github.com/carloseparra/CoderHouse-Data-Science/blob/main/E14_Desaf%C3%ADo_FeatureSelection_Carlos_Parra_Telco-Customer-Churn_.ipynb)
+
+[15.- Crossvalidation y mejora de modelos de ML](https://github.com/carloseparra/CoderHouse-Data-Science/blob/main/E15_Desafio_Crossvalidation_y_mejora_de_%20modelos_ML_Carlos_Parra_Telco-Customer-Churn_.ipynb)
+
+[16.- Entrega Final](https://github.com/carloseparra/CoderHouse-Data-Science/blob/main/E16_Entrega_Final_Carlos_Parra_Telco-Customer-Churn_.ipynb) 
+
+
+
 ## Realizado por:<br>Carlos Enrique Parra Vílchez<br>
 <div style="text-align: right"> Santiago, Chile - Agosto de 2023</div>
 
